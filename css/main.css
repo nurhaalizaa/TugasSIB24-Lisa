@@ -1,0 +1,194 @@
+*{
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #f7f7f7;
+}
+nav{
+    display: flex;
+    align-items: center;
+    padding: 10px 50px;
+    justify-content: space-between;
+    border-bottom: 1px solid #151515;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+    font-family: "Poppins", sans-serif;
+    text-decoration: none;
+    align-items: center;
+}
+nav ul li{
+    padding: 5px 20px;
+}
+nav ul li a {
+    color: #151515;
+    text-decoration: none;
+}
+nav ul li a:hover {
+  color: rgb(182, 4, 4);
+}
+nav ul li button{
+    background-color: #151515;
+    font-weight: 600;
+    color: #fff;
+    outline: none;
+    border: 0;
+    padding: 10px 20px;
+}
+.slider-container {
+    position: relative;
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+  }
+  
+  .slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .slide {
+    min-width: 100%;
+  }
+  
+  .slide img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .prev-button,
+  .next-button {
+    position: absolute;
+    top: 50%;
+    font-size: 20px;
+    cursor: pointer;
+    /* background: transparent; */
+    border: none;
+    outline: none;
+    z-index: 1;
+  }
+  
+  .prev-button {
+    left: 10px;
+  }
+  
+  .next-button {
+    right: 10px;
+  }
+.conten{
+    background-color: #ffffff; 
+    border: 2px solid #ffffff; 
+    border-radius: 10px;
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.box {
+    width: 400px;
+    height: 150px;
+    border-radius: 5px;
+    border: 2px solid #5f5c5c; 
+    margin-right: 8px; /* Menambahkan margin antara kotak */
+    display: flex;
+    justify-content: space-between;
+}
+.box-kiri{
+    width: 40%;
+}
+.image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Membuat gambar sesuai dengan kotak dan mempertahankan aspek rasio */
+}
+.box-kanan{
+    width: 60%;  
+}
+/* product api */
+table {
+  width: 100%;
+  margin: 20px auto; /* Untuk menempatkan tabel di tengah */
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+.container{
+  background-color: #ffffff; 
+  border: 2px solid #ffffff; 
+  border-radius: 10px;
+  margin: 10px;
+  padding: 20px;
+  box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.1);
+}
+.custom-button {
+  background-color: #464c53; /* Warna latar belakang tombol */
+  color: #fff; /* Warna teks tombol */
+  padding: 10px 20px; /* Padding di dalam tombol */
+  border: none; /* Tanpa border */
+  border-radius: 5px; /* Border radius untuk sudut tombol */
+  cursor: pointer; /* Tampilan kursor ketika di atas tombol */
+  transition: background-color 0.3s; /* Transisi warna latar belakang saat dihover */
+  display: inline-block; /* Menjadikan tombol inline */
+}
+
+.custom-button:hover {
+  background-color: #292d31; /* Warna latar belakang saat dihover */
+}
+/* form tambah data */
+#add-form {
+  max-width: 400px; /* Maksimum lebar form */
+  margin: 0 auto; /* Posisi form di tengah halaman */
+}
+
+/* Gaya untuk setiap grup elemen formulir */
+.form-group {
+  margin-bottom: 20px; /* Jarak antara setiap grup */
+}
+
+/* Gaya untuk label */
+label {
+  display: block; /* Membuat label tampil sebagai blok */
+  margin-bottom: 5px; /* Jarak antara label dan input */
+}
+
+/* Gaya untuk input */
+input {
+  width: 100%; /* Input mengisi lebar parentnya */
+  padding: 8px; /* Ruang di sekitar teks di dalam input */
+  border-radius: 5px; /* Border radius untuk sudut input */
+  border: 1px solid #ccc; /* Garis tepi input */
+  box-sizing: border-box; /* Ukuran box termasuk padding dan border */
+}
+
+/* Gaya untuk tombol */
+button {
+  background-color: #484f57; /* Warna latar belakang tombol */
+  color: #fff; /* Warna teks tombol */
+  padding: 10px 20px; /* Padding di dalam tombol */
+  border: none; /* Tanpa border */
+  border-radius: 5px; /* Border radius untuk sudut tombol */
+  cursor: pointer; /* Tampilan kursor ketika di atas tombol */
+  transition: background-color 0.3s; /* Transisi warna latar belakang saat dihover */
+}
+
+button:hover {
+  background-color: #2b2f33; /* Warna latar belakang saat dihover */
+}
+
+
+
+  

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form | Nurhaliza</title>
+    <link rel="stylesheet" href="../css/form.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        
+        <b><a href="../index.html" style="text-decoration: none; color: black;">Lisa</a></b>
+
+        <ul>
+            <li>
+                <a href="../html/jsdasar.html">
+                    Js dasar
+                </a>
+                
+            </li>
+            <li>
+                <a href="../html/form.html">
+                    Form
+                </a>
+            </li>
+            <li>
+                <a href="../html/landingdom.html">
+                    Landingdom
+                </a>
+            </li>
+            <li>
+                <a href="../html/productapi.html">
+                    Product API
+                </a>
+            </li>
+            <li>
+                <button>
+                    masuk
+                </button>
+            </li>
+        </ul>
+    </nav>
+    <h1 class="title">Form Pendaftaran </h1>
+    <form action="" method="post">
+        <div class="parent-content">
+            <div class="section-50">
+                <label for="nama">Nama:</label><br>
+                <input type="text" id="nama" name="nama" required>        
+            </div>
+            <div class="section-50">
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required>
+            </div>
+        </div>
+        <div class="parent-content">
+            <div class="section-50">
+                <label for="no">Nomor HP:</label><br>
+                <input type="tel" id="no" name="no" pattern="[0-9]{3}-[0-9]{4}-[0-9]{4}" required>        
+            </div>
+            <div class="section-50">
+                <label for="jenis_kelamin">Jenis Kelamin</label><br>
+                <input type="radio" id="laki_laki" name="jenis_kelamin" value="Laki-laki" required>
+                <label for="laki_laki">Laki-laki</label><br>
+                <input type="radio" id="perempuan" name="jenis_kelamin" value="Perempuan" required>
+                <label for="perempuan">Perempuan</label>      
+            </div>
+        </div>
+        <div class="parent-content">
+            <div class="section-50">
+                  
+                <label>Hobi</label><br>
+                <input type="checkbox" id="membaca" name="hobi[]" value="Membaca">
+                <label for="membaca">Membaca</label><br>
+                <input type="checkbox" id="menulis" name="hobi[]" value="Menulis">
+                <label for="menulis">Menulis</label><br>
+                <input type="checkbox" id="menyanyi" name="hobi[]" value="Menyanyi">
+                <label for="menyanyi">Menyanyi</label><br>
+                <input type="checkbox" id="olahraga" name="hobi[]" value="Olahraga">
+                <label for="olahraga">Olahraga</label>
+            </div>
+            <div class="section-50">
+                <label for="alamat">Alamat:</label><br>
+                <textarea name="alamat" id="alamat" cols="50" rows="5" required></textarea>        
+            </div>
+        </div>
+
+        <div class="parent-content align-end">
+            <div class="section-60">
+                <label for="skema">Prodi:</label><br>
+                <select name="prodi" id="prodi" required>
+                    <option value="">pilih prodi</option>
+                    <option value="tif">Teknik Informatika</option>
+                    <option value="si">Sistem Informasi</option>
+                    <option value="mekatro">Teknik Mekatronika</option>
+                </select>  
+            </div>
+            <div class="section-20">
+                <input class="btn-primary" type="submit" value="Daftar">
+            </div>
+        </div>
+        <div class="parent-content">
+            <div class="section-50">
+                <label for="foto">Foto Diri:</label><br>
+                <input type="file" accept=".pdf, .png, .jpg" name="foto" id="foto" required>        
+            </div>
+        </div>
+    </form>
+
+    <footer>
+        <h1>Nurhaliza</h1>
+    </footer>
+</body>
+</html>
