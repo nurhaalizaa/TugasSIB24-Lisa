@@ -45,7 +45,7 @@ $(document).ready(function(){
        };
 
        $.ajax({
-           url: 'https://crudcrud.com/api/8831987885ce48d5b3f60f2fd08d5ca2/users',
+           url: 'https://crudcrud.com/api/c1919f3320e34f43b51c7976825ebf4a/users',
            method: 'POST',
            contentType: 'application/json',
            data: JSON.stringify(formData),
@@ -72,7 +72,7 @@ $(document).ready(function(){
    // Fungsi untuk menghapus data
    function deleteData(id, row) {
        $.ajax({
-           url: 'https://crudcrud.com/api/8831987885ce48d5b3f60f2fd08d5ca2/users/' + id,
+           url: 'https://crudcrud.com/api/c1919f3320e34f43b51c7976825ebf4a/users/' + id,
            method: 'DELETE',
            success: function(data) {
                // Hapus baris tabel dari DOM setelah data berhasil dihapus
@@ -98,7 +98,7 @@ $(document).ready(function(){
 
 // Tampil Data
    $.ajax({
-       url: 'https://crudcrud.com/api/8831987885ce48d5b3f60f2fd08d5ca2/users',
+       url: 'https://crudcrud.com/api/c1919f3320e34f43b51c7976825ebf4a/users',
        method: 'GET',
        success: function(data) {
            // Tampilkan data dalam bentuk tabel
@@ -137,7 +137,7 @@ $(document).ready(function(){
    // Fungsi untuk mengambil data dengan ID tertentu
    function getDataById(id) {
        return $.ajax({
-           url: 'https://crudcrud.com/api/8831987885ce48d5b3f60f2fd08d5ca2/users/' + id,
+           url: 'https://crudcrud.com/api/c1919f3320e34f43b51c7976825ebf4a/users/' + id,
            method: 'GET'
        });
    }
@@ -145,7 +145,7 @@ $(document).ready(function(){
    // Fungsi untuk memperbarui data
    function updateData(id, newData) {
        return $.ajax({
-           url: 'https://crudcrud.com/api/8831987885ce48d5b3f60f2fd08d5ca2/users/' + id,
+           url: 'https://crudcrud.com/api/c1919f3320e34f43b51c7976825ebf4a/users/' + id,
            method: 'PUT', // Anda dapat menggunakan metode PUT atau PATCH tergantung pada kebutuhan Anda
            contentType: 'application/json',
            data: JSON.stringify(newData)

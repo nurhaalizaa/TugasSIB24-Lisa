@@ -1,0 +1,174 @@
+*{
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #f7f7f7;
+}
+
+/* navbar */
+.navbar {
+    /* background-color: #333; */
+    /* color: #fff; */
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #151515;    
+}  
+.logo {
+    margin: 0;
+    /* text-decoration: none; */
+    color: black;
+}
+a{
+    text-decoration: none;
+}
+.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+.dropdown-content a{
+    text-decoration: none;
+    color: black;
+    padding: 5px 20px;
+    
+}
+.dropdown-content a:hover{
+    /* color: #353333; */
+    /* text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); */
+    background-color: #dddddd;
+}
+.login{
+    background-color: #464c53; /* Warna latar belakang tombol */
+    color: #fff; /* Warna teks tombol */
+    /* padding: 10px 20px; Padding di dalam tombol */
+    border: none; /* Tanpa border */
+    border-radius: 10px; /* Border radius untuk sudut tombol */
+    cursor: pointer; /* Tampilan kursor ketika di atas tombol */
+    /* transition: background-color 0.3s; Transisi warna latar belakang saat dihover */
+    /* display: inline-block; Menjadikan tombol inline */
+    width: 35px;
+    height: 30px;
+    right: 0;
+}
+/* content */
+.container{
+    background-color: #ffffff; 
+    border: 2px solid #ffffff; 
+    border-radius: 10px;
+    margin: 10px;
+    padding: 20px;
+    box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.1);
+}
+.custom-button {
+    background-color: #464c53; /* Warna latar belakang tombol */
+    color: #fff; /* Warna teks tombol */
+    padding: 10px 20px; /* Padding di dalam tombol */
+    border: none; /* Tanpa border */
+    border-radius: 5px; /* Border radius untuk sudut tombol */
+    cursor: pointer; /* Tampilan kursor ketika di atas tombol */
+    transition: background-color 0.3s; /* Transisi warna latar belakang saat dihover */
+    display: inline-block; /* Menjadikan tombol inline */
+}
+.custom-button:hover {
+    background-color: #292d31; /* Warna latar belakang saat dihover */
+}
+/* product api */
+table {
+    width: 100%;
+    margin: 20px auto; /* Untuk menempatkan tabel di tengah */
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  th {
+    background-color: #f2f2f2;
+  }
+  button {
+    background-color: #484f57; /* Warna latar belakang tombol */
+    color: #fff; /* Warna teks tombol */
+    padding: 10px 20px; /* Padding di dalam tombol */
+    border: none; /* Tanpa border */
+    border-radius: 5px; /* Border radius untuk sudut tombol */
+    cursor: pointer; /* Tampilan kursor ketika di atas tombol */
+    transition: background-color 0.3s; /* Transisi warna latar belakang saat dihover */
+  }
+  
+  button:hover {
+    background-color: #2b2f33; /* Warna latar belakang saat dihover */
+  }
+@media screen and (max-width: 650px) {
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+    
+    .menu-icon {
+        text-decoration: none;
+        color: black;
+        display: inline-block; /* Menunjukkan icon pada layar kecil */
+    }
+    
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        flex-direction: column;
+        /* background-color: #333; */
+        min-width: 160px;
+        right: 0;
+        /* top: 30px; */
+        /* z-index: 1; */
+        background-color: #fff;
+        text-align: center;
+        border-radius: 5PX;
+    }
+    
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+    
+    .dropdown-content a:hover {
+        /* background-color: #ddd; */
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+    
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+    .custom-button {
+        background-color: #464c53; /* Warna latar belakang tombol */
+        color: #fff; /* Warna teks tombol */
+        padding: 10px 20px; /* Padding di dalam tombol */
+        border: none; /* Tanpa border */
+        border-radius: 5px; /* Border radius untuk sudut tombol */
+        cursor: pointer; /* Tampilan kursor ketika di atas tombol */
+        transition: background-color 0.3s; /* Transisi warna latar belakang saat dihover */
+        display: inline-block; /* Menjadikan tombol inline */
+        width: 100%;
+    }
+    .custom-button:hover {
+        background-color: #292d31; /* Warna latar belakang saat dihover */
+    }
+}
+
+/* Menyembunyikan icon pada layar yang lebih besar dari 600px */
+@media screen and (min-width: 651px) {
+    .menu-icon {
+        display: none;
+    }
+    hr{
+        display: none;
+    }
+}
