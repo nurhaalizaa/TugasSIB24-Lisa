@@ -27,11 +27,14 @@
   <link rel="stylesheet" href="../AdminLTE-3.2.0/plugins/daterangepicker/daterangepicker.css">
   <!-- summernote -->
   <link rel="stylesheet" href="../AdminLTE-3.2.0/plugins/summernote/summernote-bs4.min.css">
+  <link rel="stylesheet" href="../AdminLTE-3.2.0/dist/css/adminlte.min.css">
+  <!-- DataTables -->
+  <link rel="stylesheet" href="../AdminLTE-3.2.0/plugins/datatables-bs4/css/dataTables.bootstrap4.min.css">
+  <link rel="stylesheet" href="../AdminLTE-3.2.0/plugins/datatables-responsive/css/responsive.bootstrap4.min.css">
+  <link rel="stylesheet" href="../AdminLTE-3.2.0/plugins/datatables-buttons/css/buttons.bootstrap4.min.css">
 </head>
-<body class="hold-transition sidebar-mini layout-fixed">
-<div class="wrapper">
-
-  <!-- Preloader -->
+<body class="hold-transition sidebar-mini">
+<div class="wrapper"><!-- Preloader -->
   <div class="preloader flex-column justify-content-center align-items-center">
     <img class="animation__shake" src="../img/woman.png" alt="AdminLTELogo" height="60" width="60">
   </div>
@@ -103,12 +106,12 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1 class="m-0">Product</h1>
+            <h1 class="m-0">Data Produk</h1>
           </div><!-- /.col -->
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
               <li class="breadcrumb-item"><a href="#">Home</a></li>
-              <li class="breadcrumb-item active">Product</li>
+              <li class="breadcrumb-item active">Data Produk</li>
             </ol>
           </div><!-- /.col -->
         </div><!-- /.row -->
@@ -118,62 +121,195 @@
 
     <!-- Main content -->
     <section class="content">
-      <div class="container-fluid">     
-        <!-- /.row -->
-        <!-- Main row -->
-        <button type="button" class="btn btn-primary">Tambah</button>
+      <div class="container-fluid">
         <div class="row">
-            <table class="table">
-                <thead>
-                    <tr>
-                        <th>No</th>
-                        <th>Nama</th>
-                        <th>Jumlah</th>
-                        <th>Harga</th>
-                        <th>Action</th>
-                    </tr>
-                </thead>
-                <tbody id="data-container">
-                    <tr>
-                        <td>1</td>
-                        <td>Baju</td>
-                        <td>10</td>
-                        <td>100000</td>
-                        <td>
-                          <button type="button" class="btn btn-warning">Edit</button>
-                          <button type="button" class="btn btn-danger">Delete</button>
-                        </td>
+          <div class="col-12">
+            <div class="card">
+              <div class="card-header">
+                <h3 class="card-title">DataTable with minimal features & hover style</h3>
+              </div>
+              <!-- /.card-header -->
+              <div class="card-body">
+                <table id="example2" class="table table-bordered table-hover">
+                  <thead>
+                  <tr>
+                    <th>No</th>
+                    <th>Nama</th>
+                    <th>Jumlah</th>
+                    <th>Harga</th>
+                    <th>Ukuran</th>
+                  </tr>
+                  </thead>
+                  <tbody>
+                      <tr>
+                          <td>1</td>
+                          <td>Baju A</td>
+                          <td>10</td>
+                          <td>10000</td>
+                          <td>M</td>
                       </tr>
                       <tr>
-                        <td>2</td>
-                        <td>Celana</td>
-                        <td>20</td>
-                        <td>150000</td>
-                        <td>
-                          <button type="button" class="btn btn-warning">Edit</button>
-                          <button type="button" class="btn btn-danger">Delete</button>
-                        </td>
+                          <td>2</td>
+                          <td>Celana B</td>
+                          <td>20</td>
+                          <td>15000</td>
+                          <td>L</td>
                       </tr>
-                    <!-- Tempat untuk menampilkan data -->
-                </tbody>
-            </table>
-          <!-- /.Left col -->
-          <!-- right col (We are only adding the ID to make the widgets sortable)-->
-          <section class="col-lg-5 connectedSortable">
+                      <tr>
+                          <td>3</td>
+                          <td>Rok C</td>
+                          <td>15</td>
+                          <td>12000</td>
+                          <td>S</td>
+                      </tr>
+                      <tr>
+                          <td>4</td>
+                          <td>Kemeja D</td>
+                          <td>12</td>
+                          <td>18000</td>
+                          <td>XL</td>
+                      </tr>
+                      <tr>
+                          <td>5</td>
+                          <td>Baju E</td>
+                          <td>8</td>
+                          <td>9000</td>
+                          <td>M</td>
+                      </tr>
+                      <tr>
+                          <td>6</td>
+                          <td>Celana F</td>
+                          <td>18</td>
+                          <td>12000</td>
+                          <td>L</td>
+                      </tr>
+                      <tr>
+                          <td>7</td>
+                          <td>Rok G</td>
+                          <td>14</td>
+                          <td>11000</td>
+                          <td>S</td>
+                      </tr>
+                      <tr>
+                          <td>8</td>
+                          <td>Kemeja H</td>
+                          <td>11</td>
+                          <td>17000</td>
+                          <td>XL</td>
+                      </tr>
+                      <tr>
+                          <td>9</td>
+                          <td>Baju I</td>
+                          <td>9</td>
+                          <td>9500</td>
+                          <td>M</td>
+                      </tr>
+                      <tr>
+                          <td>10</td>
+                          <td>Celana J</td>
+                          <td>22</td>
+                          <td>16000</td>
+                          <td>L</td>
+                      </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Baju A</td>
+                            <td>10</td>
+                            <td>10000</td>
+                            <td>M</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Celana B</td>
+                            <td>20</td>
+                            <td>15000</td>
+                            <td>L</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Rok C</td>
+                            <td>15</td>
+                            <td>12000</td>
+                            <td>S</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Kemeja D</td>
+                            <td>12</td>
+                            <td>18000</td>
+                            <td>XL</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>Baju E</td>
+                            <td>8</td>
+                            <td>9000</td>
+                            <td>M</td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>Celana F</td>
+                            <td>18</td>
+                            <td>12000</td>
+                            <td>L</td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>Rok G</td>
+                            <td>14</td>
+                            <td>11000</td>
+                            <td>S</td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>Kemeja H</td>
+                            <td>11</td>
+                            <td>17000</td>
+                            <td>XL</td>
+                        </tr>
+                        <tr>
+                            <td>9</td>
+                            <td>Baju I</td>
+                            <td>9</td>
+                            <td>9500</td>
+                            <td>M</td>
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                            <td>Celana J</td>
+                            <td>22</td>
+                            <td>16000</td>
+                            <td>L</td>
+                        </tr>
+                    
+                  </tbody>
+                  <tfoot>
+                  <tr>
+                    <th>No</th>
+                    <th>Nama</th>
+                    <th>Jumlah</th>
+                    <th>Harga</th>
+                    <th>Ukuran</th>
+                  </tr>
+                  </tfoot>
+                </table>
+              </div>
+              <!-- /.card-body -->
+            </div>
             <!-- /.card -->
-          </section>
-          <!-- right col -->
+            <!-- /.card -->
+          </div>
+          <!-- /.col -->
         </div>
-        <!-- /.row (main row) -->
-      </div><!-- /.container-fluid -->
+        <!-- /.row -->
+      </div>
+      <!-- /.container-fluid -->
     </section>
     <!-- /.content -->
   </div>
-  
   <!-- /.content-wrapper -->
   <footer class="main-footer">
-    <strong>2024-<a href="https://adminlte.io">Nurhaliza</a>.</strong>
-    All rights reserved.
+    <strong> &copy; 2024 <a href="https://adminlte.io">Nurhaliza</a>.</strong> All rights reserved.
   </footer>
 
   <!-- Control Sidebar -->
@@ -186,37 +322,43 @@
 
 <!-- jQuery -->
 <script src="../AdminLTE-3.2.0/plugins/jquery/jquery.min.js"></script>
-<!-- jQuery UI 1.11.4 -->
-<script src="../AdminLTE-3.2.0/plugins/jquery-ui/jquery-ui.min.js"></script>
-<!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
-<script>
-  $.widget.bridge('uibutton', $.ui.button)
-</script>
+<!-- <script src="../../plugins/jquery/jquery.min.js"></script> -->
 <!-- Bootstrap 4 -->
 <script src="../AdminLTE-3.2.0/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
-<!-- ChartJS -->
-<script src="../AdminLTE-3.2.0/plugins/chart.js/Chart.min.js"></script>
-<!-- Sparkline -->
-<script src="../AdminLTE-3.2.0/plugins/sparklines/sparkline.js"></script>
-<!-- JQVMap -->
-<script src="../AdminLTE-3.2.0/plugins/jqvmap/jquery.vmap.min.js"></script>
-<script src="../AdminLTE-3.2.0/plugins/jqvmap/maps/jquery.vmap.usa.js"></script>
-<!-- jQuery Knob Chart -->
-<script src="../AdminLTE-3.2.0/plugins/jquery-knob/jquery.knob.min.js"></script>
-<!-- daterangepicker -->
-<script src="../AdminLTE-3.2.0/plugins/moment/moment.min.js"></script>
-<script src="../AdminLTE-3.2.0/plugins/daterangepicker/daterangepicker.js"></script>
-<!-- Tempusdominus Bootstrap 4 -->
-<script src="../AdminLTE-3.2.0/plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
-<!-- Summernote -->
-<script src="../AdminLTE-3.2.0/plugins/summernote/summernote-bs4.min.js"></script>
-<!-- overlayScrollbars -->
-<script src="../AdminLTE-3.2.0/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
+<!-- DataTables  & Plugins -->
+<script src="../AdminLTE-3.2.0/plugins/datatables/jquery.dataTables.min.js"></script>
+<script src="../AdminLTE-3.2.0/plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
+<script src="../AdminLTE-3.2.0/plugins/datatables-responsive/js/dataTables.responsive.min.js"></script>
+<script src="../AdminLTE-3.2.0/plugins/datatables-responsive/js/responsive.bootstrap4.min.js"></script>
+<script src="../AdminLTE-3.2.0/plugins/datatables-buttons/js/dataTables.buttons.min.js"></script>
+<script src="../AdminLTE-3.2.0/plugins/datatables-buttons/js/buttons.bootstrap4.min.js"></script>
+<script src="../AdminLTE-3.2.0/plugins/jszip/jszip.min.js"></script>
+<script src="../AdminLTE-3.2.0/plugins/pdfmake/pdfmake.min.js"></script>
+<script src="../AdminLTE-3.2.0/plugins/pdfmake/vfs_fonts.js"></script>
+<script src="../AdminLTE-3.2.0/plugins/datatables-buttons/js/buttons.html5.min.js"></script>
+<script src="../AdminLTE-3.2.0/plugins/datatables-buttons/js/buttons.print.min.js"></script>
+<script src="../AdminLTE-3.2.0/plugins/datatables-buttons/js/buttons.colVis.min.js"></script>
 <!-- AdminLTE App -->
-<script src="../AdminLTE-3.2.0/dist/js/adminlte.js"></script>
+<script src="../AdminLTE-3.2.0/dist/js/adminlte.min.js"></script>
 <!-- AdminLTE for demo purposes -->
 <script src="../AdminLTE-3.2.0/dist/js/demo.js"></script>
-<!-- AdminLTE dashboard demo (This is only for demo purposes) -->
-<!-- <script src="../AdminLTE-3.2.0/dist/js/pages/dashboard.js"></script> -->
+<!-- Page specific script -->
+<script>
+  $(function () {
+    $("#example1").DataTable({
+      "responsive": true, "lengthChange": false, "autoWidth": false,
+      "buttons": ["copy", "csv", "excel", "pdf", "print", "colvis"]
+    }).buttons().container().appendTo('#example1_wrapper .col-md-6:eq(0)');
+    $('#example2').DataTable({
+      "paging": true,
+      "lengthChange": false,
+      "searching": false,
+      "ordering": true,
+      "info": true,
+      "autoWidth": false,
+      "responsive": true,
+    });
+  });
+</script>
 </body>
 </html>
